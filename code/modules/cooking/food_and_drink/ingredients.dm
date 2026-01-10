@@ -76,6 +76,8 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks/ingredient)
 	fill_amt = 2
 	initial_volume = 25
 	initial_reagents = "slime"
+	food_color = "#A4BC62"
+	var/eyes_present = TRUE
 
 	heal(var/mob/M)
 		boutput(M, SPAN_ALERT("You can feel it wriggling..."))
@@ -391,6 +393,8 @@ TYPEINFO(/obj/item/reagent_containers/food/snacks/ingredient/honey)
 	brew_result = list("mead"=20)
 	mat_changename = "honey"
 	default_material = "honey"
+	can_arcplate = FALSE
+
 
 /obj/item/reagent_containers/food/snacks/ingredient/royal_jelly
 	name = "royal jelly"
